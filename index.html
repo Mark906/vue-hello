@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>Vue - primi passi</title>
         <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
 
@@ -11,7 +12,11 @@
 
             <h1>{{ messaggio }}</h1>
 
-            <img :src="immagine" alt="">
+            <button @click="cambiaImmagine">Change</button>
+
+            <div class="img">
+                <img :src="immagine" alt="">
+            </div>
 
         </div>
 
